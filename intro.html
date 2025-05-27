@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카르마코드 진단</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .font-light {
+            font-weight: 300;
+        }
+        .font-regular {
+            font-weight: 400;
+        }
+        .font-medium {
+            font-weight: 500;
+        }
+        .font-bold {
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-100">
+    <!-- 네비게이션 바 -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="/" class="text-xl font-bold text-blue-600">카르마코드</a>
+                    </div>
+                    <div class="hidden md:ml-6 md:flex md:space-x-8">
+                        <a href="/" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">홈</a>
+                        <a href="/intro" class="border-blue-500 text-gray-900 font-bold inline-flex items-center px-1 pt-1 border-b-2 text-sm">카르마코드 진단소개</a>
+                        <a href="/survey" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">진단하기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-6 md:p-8">
+            <h1 class="text-3xl md:text-4xl font-bold text-center mb-8">카르마코드 진단이란?</h1>
+            
+            <!-- 소개 섹션 -->
+            <section class="mb-12">
+                <h2 class="text-2xl font-bold mb-4 text-blue-800">BEDR 코드 시스템</h2>
+                <p class="text-gray-700 mb-6">
+                    카르마코드 진단은 BEDR 코드 시스템을 기반으로 합니다. 이 시스템은 4가지 주요 영역으로 구성되어 있으며, 
+                    각 영역은 9개의 세부 코드로 나뉘어 총 36개의 코드로 당신의 성향을 분석합니다.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                    <div class="bg-blue-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-3 text-blue-700">B (Born)</h3>
+                        <p class="text-gray-700 mb-4">선천적인 성향과 태도를 나타내는 영역입니다.</p>
+                        <ul class="text-gray-600 space-y-2 text-sm">
+                            <li>• B1: 리더십과 통솔력</li>
+                            <li>• B2: 창의성과 예술성</li>
+                            <li>• B3: 분석력과 논리성</li>
+                            <li>• B4: 감수성과 공감력</li>
+                            <li>• B5: 실용성과 현실감</li>
+                            <li>• B6: 모험심과 도전정신</li>
+                            <li>• B7: 안정성과 보수성</li>
+                            <li>• B8: 독립성과 자율성</li>
+                            <li>• B9: 협동성과 사회성</li>
+                        </ul>
+                    </div>
+                    <div class="bg-green-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-3 text-green-700">E (Environment)</h3>
+                        <p class="text-gray-700 mb-4">환경에 대한 적응 방식을 나타내는 영역입니다.</p>
+                        <ul class="text-gray-600 space-y-2 text-sm">
+                            <li>• E1: 변화 추구형</li>
+                            <li>• E2: 안정 추구형</li>
+                            <li>• E3: 독립 추구형</li>
+                            <li>• E4: 협력 추구형</li>
+                            <li>• E5: 경쟁 추구형</li>
+                            <li>• E6: 조화 추구형</li>
+                            <li>• E7: 구조 추구형</li>
+                            <li>• E8: 자유 추구형</li>
+                            <li>• E9: 균형 추구형</li>
+                        </ul>
+                    </div>
+                    <div class="bg-yellow-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-3 text-yellow-700">D (Decision)</h3>
+                        <p class="text-gray-700 mb-4">의사결정 방식을 나타내는 영역입니다.</p>
+                        <ul class="text-gray-600 space-y-2 text-sm">
+                            <li>• D1: 직관적 결정형</li>
+                            <li>• D2: 분석적 결정형</li>
+                            <li>• D3: 감정적 결정형</li>
+                            <li>• D4: 논리적 결정형</li>
+                            <li>• D5: 신중한 결정형</li>
+                            <li>• D6: 신속한 결정형</li>
+                            <li>• D7: 독립적 결정형</li>
+                            <li>• D8: 협의적 결정형</li>
+                            <li>• D9: 균형적 결정형</li>
+                        </ul>
+                    </div>
+                    <div class="bg-red-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-3 text-red-700">R (Reaction)</h3>
+                        <p class="text-gray-700 mb-4">위기나 변화에 대한 대응 방식을 나타내는 영역입니다.</p>
+                        <ul class="text-gray-600 space-y-2 text-sm">
+                            <li>• R1: 적극 대응형</li>
+                            <li>• R2: 신중 대응형</li>
+                            <li>• R3: 회피 대응형</li>
+                            <li>• R4: 수용 대응형</li>
+                            <li>• R5: 도전 대응형</li>
+                            <li>• R6: 조정 대응형</li>
+                            <li>• R7: 독립 대응형</li>
+                            <li>• R8: 협력 대응형</li>
+                            <li>• R9: 균형 대응형</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 간단한 특징 설명 -->
+            <section class="mb-12">
+                <h2 class="text-2xl font-bold mb-4 text-blue-800">진단의 특징</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-6">
+                    <div class="p-6 text-center">
+                        <div class="text-3xl mb-4">🎯</div>
+                        <h3 class="text-lg font-medium mb-2">정확한 분석</h3>
+                        <p class="text-gray-600 font-light">108개의 질문으로 당신의 성향을 정확하게 분석합니다</p>
+                    </div>
+                    <div class="p-6 text-center">
+                        <div class="text-3xl mb-4">⚡</div>
+                        <h3 class="text-lg font-medium mb-2">빠른 결과</h3>
+                        <p class="text-gray-600 font-light">진단 완료 즉시 상세한 결과를 확인할 수 있습니다</p>
+                    </div>
+                    <div class="p-6 text-center">
+                        <div class="text-3xl mb-4">💡</div>
+                        <h3 class="text-lg font-medium mb-2">맞춤 해석</h3>
+                        <p class="text-gray-600 font-light">당신만의 강점과 약점을 분석하여 제시합니다</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 진단 과정 설명 -->
+            <section class="mb-12">
+                <h2 class="text-2xl font-bold mb-4 text-blue-800">진단 과정</h2>
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">1</div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-semibold mb-2">108개의 질문</h3>
+                            <p class="text-gray-700">각 영역별로 27개의 질문, 총 108개의 질문에 답변해주세요.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">2</div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-semibold mb-2">5점 척도 응답</h3>
+                            <p class="text-gray-700">각 질문에 대해 '전혀 아니다'부터 '매우 그렇다'까지 5점 척도로 응답해주세요.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">3</div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-semibold mb-2">상세한 결과 분석</h3>
+                            <p class="text-gray-700">당신의 강점과 약점을 포함한 상세한 분석 결과를 확인하세요.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 시작하기 버튼 -->
+            <div class="text-center">
+                <a href="/survey" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors text-lg font-semibold">
+                    진단 시작하기
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
